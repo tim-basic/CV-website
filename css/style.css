@@ -1,0 +1,196 @@
+/*start: general styles for text of CV*/
+
+body {
+  font: 1.6vh 'Work Sans', sans-serif;
+  color: white;
+  margin:0;
+}
+
+h1, h2, h3, h4,
+strong {
+  font-size: 1.8vh;
+  font-weight: 500;
+
+}
+
+#main {
+  padding: 25px;
+  margin: 25px;
+  max-width: 450px;
+  z-index: 2;
+  position: relative;
+  /*for ie*/
+  border: 1px solid rgb(255,255,255);
+
+  border: 1px solid rgb(255,255,255, 0.5);
+  background-color: rgb(255,255,255,0.1);
+}
+
+section {
+  /*border-bottom: 1px dotted white;*/
+  padding: 5px 0;
+  margin: 10px 0;
+}
+
+.skill-list {
+    list-style: none;
+    padding-left: 0;
+}​
+
+.no-left-padding {
+  padding-left: 0;
+}
+
+.margin-5-x {
+  margin: 5px 0;
+}
+
+.skill-icons {
+  display:inline-block;
+  padding: 1px 3px;
+  font-size: 3em;
+}
+
+.skill-icons:hover {
+  transform: translate(0, -2px);
+}
+
+
+header p {
+  margin: 8px 0;
+}
+
+a {
+  text-decoration: none;
+  border-bottom: 1px dotted white;
+  padding: 0 1px;
+  color: white;
+  transition: all 0.2s;
+}
+
+::selection,
+a:hover,
+a:focus {
+	/*for safari*/
+  background-color: rgb(255,255,255);
+
+  background-color: rgb(255,255,255,0.8);
+  color: black;
+}
+
+/*end: general styles for text of CV*/
+
+/* ---- particles.js container ---- */
+#particles-js {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+
+  pointer-events:auto  
+}
+
+/*modal css*/
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  text-align: center;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: rgb(255,255,255);
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+/***********************************************************************************************
+css for tabs
+ripped from w3schools
+***********************************************************************************************/
+
+.tab {
+  overflow: hidden;
+  border-bottom: 1px dotted #ccc;
+}
+
+
+/* Style the buttons inside the tab */
+.tab button {
+  color: inherit;
+  font: inherit;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 300;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover and when active */
+.tab button.active,
+.tab button:hover {
+	/*for safari*/
+	background-color: grey;
+  background-color: rgb(255,255,255,0.5);
+}
+
+
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
