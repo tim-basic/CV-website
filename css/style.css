@@ -2,7 +2,7 @@
 
 body {
   font: 1.6vh 'Work Sans', sans-serif;
-  color: white;
+  color: #444);
   margin:0;
 }
 
@@ -19,15 +19,13 @@ strong {
   max-width: 450px;
   z-index: 2;
   position: relative;
-  /*for ie*/
-  border: 1px solid rgb(255,255,255);
-
-  border: 1px solid rgb(255,255,255, 0.5);
-  background-color: rgb(255,255,255,0.1);
+  border: 1px solid #000;   /*for ie*/
+  border: 1px solid rgb(0,0,0, 0.5);
+  background-color: #FFF    /*for ie*/
+  background-color: rgb(255,255,255,0.8);
 }
 
 section {
-  /*border-bottom: 1px dotted white;*/
   padding: 5px 0;
   margin: 10px 0;
 }
@@ -49,6 +47,7 @@ section {
   display:inline-block;
   padding: 1px 3px;
   font-size: 3em;
+  color: #444;
 }
 
 .skill-icons:hover {
@@ -62,20 +61,17 @@ header p {
 
 a {
   text-decoration: none;
-  border-bottom: 1px dotted white;
+  border-bottom: 1px dotted rgb(50,50,50);
   padding: 0 1px;
-  color: white;
+  color: rgb(50,50,50);
   transition: all 0.2s;
 }
 
 ::selection,
 a:hover,
 a:focus {
-	/*for safari*/
-  background-color: rgb(255,255,255);
-
-  background-color: rgb(255,255,255,0.8);
-  color: black;
+  background-color: #444;
+  color: white;
 }
 
 /*end: general styles for text of CV*/
@@ -90,7 +86,7 @@ a:focus {
   z-index: 1;
   width: 100%;
   height: 100%;
-  background-color: black;
+  background-color: white;
   background-image: url("");
   background-repeat: no-repeat;
   background-size: cover;
@@ -112,17 +108,17 @@ a:focus {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  background-color: rgb(255,255,255); /* Fallback color */
+  background-color: rgba(255,255,255,0.9); /* Black w/ opacity */
   text-align: center;
 }
 
 /* Modal Content */
 .modal-content {
-  background-color: rgb(255,255,255);
+  background-color: rgb(255,255,255); /*Background of actual modal box*/
   margin: auto;
   padding: 20px;
-  border: 1px solid #888;
+  border: 1px solid #444;
   width: 40%;
 }
 
@@ -150,7 +146,7 @@ ripped from w3schools
 
 .tab {
   overflow: hidden;
-  border-bottom: 1px dotted #ccc;
+  border-bottom: 1px dotted #444;
 }
 
 
@@ -170,8 +166,8 @@ ripped from w3schools
 .tab button.active,
 .tab button:hover {
 	/*for safari*/
-	background-color: grey;
-  background-color: rgb(255,255,255,0.5);
+	background-color: lightgrey;
+  background-color: rgb(0,0,0,0.2);
 }
 
 
