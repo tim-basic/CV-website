@@ -16,7 +16,7 @@ strong {
 #main {
   padding: 25px;
   margin: 25px;
-  max-width: 450px;
+  max-width: 550px;
   z-index: 2;
   position: relative;
   border: 1px solid #000;   /*for ie*/
@@ -204,11 +204,15 @@ ripped from w3schools
   #main {
     /*padding: 10px;*/
     margin: 10px;
+    border: 0;
+    background-color: #FFF;    /*for ie*/
+    background-color: rgb(255,255,255,0.4);
   }
   h1, h2, h3, h4,
   strong {
-  font-size: 20px;
-  font-weight: 500;
+    font-size: 20px;
+    font-weight: 500;
+
 
   }
 }
